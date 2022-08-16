@@ -1,16 +1,9 @@
-const Menu = require("../models/menu.model")
-const bodyParser = require("body-parser");
+const Menu = require('../models/menu.model');
 
+async function listAllPizzas(req, res) {
+  const menu = await Menu.findAll();
 
-
-
-async function listAllPizzas(req,res){
-
-    const menu = await Menu.findAll();
-    console.log(menu);
-    return res.send({menu: menu})
-    
+  return res.send({ menu });
 }
 
-
-module.exports = listAllPizzas
+module.exports = listAllPizzas;

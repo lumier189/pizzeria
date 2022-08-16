@@ -3,12 +3,16 @@ const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
 
-const Menu = sequelize.define('menu', {
-  name: {
+const MenuSize = sequelize.define('menu_size', {
+  menu_id: {
     type: DataTypes.STRING,
-
+    primaryKey: true,
   },
-  is_active: {
+  size_id: {
+    type: DataTypes.TINYINT,
+    primaryKey: true,
+  },
+  price: {
     type: DataTypes.TINYINT,
   },
   createdAt: {
@@ -19,8 +23,9 @@ const Menu = sequelize.define('menu', {
     field: 'updated_at',
     type: Sequelize.DATE,
   },
-}, {
-  timestamps: false,
+},
+ {
+  timestamps: true,
 });
 
-module.exports = Menu;
+module.exports = MenuSize;

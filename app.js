@@ -5,9 +5,13 @@
 var createError = require('http-errors');
 var express = require('express');
 var logger = require('morgan');
+const bodyParser = require("body-parser")
 var indexRouter = require('./routes/index');
 var menuRouter = require('./routes/menu.router');
-
+const registerRouter = require("./routes/register.router")
+const orderItemsRouter = require("./routes/order.items.router");
+const order = require("./routes/order.router");
+const ingredientRouter = require("./routes/ingredients.router")
 var app = express();
 
 
@@ -16,8 +20,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.use('/', indexRouter);
-app.use('/pizzas', menuRouter);
+app.use("/", indexRouter);
+app.use("/pizzas", menuRouter);
+app.use("/clients", registerRouter);
+app.use("/orderitems", orderItemsRouter);
+app.use("/orders", order);
+app.use("/ingredients", ingredientRouter);
 
 
 

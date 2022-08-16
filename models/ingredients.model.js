@@ -3,13 +3,10 @@ const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
 
-const Menu = sequelize.define('menu', {
+const Ingredients = sequelize.define('ingredient', {
   name: {
     type: DataTypes.STRING,
 
-  },
-  is_active: {
-    type: DataTypes.TINYINT,
   },
   createdAt: {
     field: 'created_at',
@@ -23,4 +20,4 @@ const Menu = sequelize.define('menu', {
   timestamps: false,
 });
 
-module.exports = Menu;
+module.exports = Ingredients;

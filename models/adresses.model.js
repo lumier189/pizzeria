@@ -3,13 +3,25 @@ const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
 
-const Menu = sequelize.define('menu', {
-  name: {
+const Adresses = sequelize.define('adresses', {
+  street_adress: {
     type: DataTypes.STRING,
 
   },
-  is_active: {
+  number: {
     type: DataTypes.TINYINT,
+  },
+  postal_code: {
+    type: DataTypes.STRING,
+  },
+  city: {
+    type: DataTypes.STRING,
+  },
+  state_province: {
+    type: DataTypes.STRING,
+  },
+  client_id: {
+    type: DataTypes.INTEGER,
   },
   createdAt: {
     field: 'created_at',
@@ -23,4 +35,4 @@ const Menu = sequelize.define('menu', {
   timestamps: false,
 });
 
-module.exports = Menu;
+module.exports = Adresses;
