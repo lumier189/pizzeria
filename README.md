@@ -3,7 +3,7 @@ Olá! Primeiramente gostaria de agredecer ao @Vituhugo por toda a instrução da
 E também apontar que seu desenvolvimento foi completamente documentado e você pode acompanhar diretamente na  <a href="https://github.com/vituhugo/pizzeria/wiki">wiki</a>.
 
 
- <h4 align="center">levantamento de requisistos </h4>
+ <h2>levantamento de requisistos </h2>
 Depois de definar qual tipo de projeto seria o proximo passo foi fazer o <a href="https://github.com/vituhugo/pizzeria/wiki/Requirements-gathering ">levantamento de requisitos</a>, aonde verificamos todas as necessidades e demandas do "cliente", sendo a primeira etapa para começar a estruturar os proximos passos.
 
 
