@@ -8,21 +8,21 @@ O primeiro passo depois de definir qual tipo de projeto seria, foi fazer o <a hr
 
 Logo após vem a parte que me tomou mais tempo:  <a href="https://github.com/vituhugo/pizzeria/wiki/Database-definition">definições da database</a>, É aqui que fazemos todas as verificações pra atender as demandas, e quanto melhor for sua database mais facil será codar lá frente.
 
-Essa etapa foi uma verdadeira escola para entender melhor os os conceitos do banco de dados, a famosa DER/MER ou seja : Entidades tipos de relacionamentos.Também nessa etapa foram utilizadas as "Regras de normalização do banco de dados".
+Essa etapa foi uma verdadeira escola para entender melhor os os conceitos do banco de dados, a famosa DER/MER ou seja : Entidades tipos de relacionamentos.Também nessa etapa foram utilizadas as Regras de normalização do banco de dados.
 
 conceitos gerais das regras de normalização do banco de dados: 
 ![image](https://user-images.githubusercontent.com/108551838/185192385-cdd64e64-24e1-41a3-9729-3bdd859c6917.png)
 
 
-Depois de muitas tentativas, muitas perguntas e artigos estava pronto pra ir pra proxima etapa.
+Depois de muitas tentativas, muitas perguntas e artigos, como o dump inicial pronto eu estava pronto pra ir pra proxima etapa.
 
 ![image](https://user-images.githubusercontent.com/108551838/185193246-f0dec7d0-fcf2-46ba-a4b6-6c8fb1af924a.png)
 
 
 A seguinte etapa foi algo que não fez parte da primeira aplicação que fiz uma semana atrás. Então com propriedade eu digo: FAZ TODA A DIFERENÇA,
 sem ela e sem as "Regras de normalização do banco de dados" tudo que vier pela frente vai tomar MUITO mais tempo.
-durante o <a href="">primeiro crud</a> fiquei boas horas perdidos em rotas sem saber qual era qual, perdido em nome de variaveis.
-Me assusta imaginar a bagunça que seria tentar seguir daqui pra frente sem estar estruturado e normalizado: Uma vez que a estruta esta pronta eu poderia me preocupar simplesmente em "codar", e não em codar definir e estruturar ao mesmo tempo;
+durante o <a href="">primeiro crud</a> fiquei boas horas perdido em rotas sem saber qual era qual, perdido em nomes de variaveis.
+Me assusta imaginar a bagunça que seria tentar seguir daqui pra frente sem estar estruturado e normalizado.Uma vez que a estruta estava pronta eu poderia me preocupar simplesmente em "codar", e não em codar definir e estruturar ao mesmo tempo;
 
 <a href="https://github.com/vituhugo/pizzeria/wiki/Routes-definitions">Rotas definidas</a>
 
@@ -38,7 +38,8 @@ Codigo de respostas:
 ![image](https://user-images.githubusercontent.com/108551838/185196034-4f18521e-1773-4a0a-a30d-480fd3deb72e.png)
 
 
--
+ 
+aqui você pode checar o <a href="https://documenter.getpostman.com/view/2650664/VUjQm4Zw">resultado final</a> da aplicação do REST. 
 
 
 
