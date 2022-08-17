@@ -3,11 +3,16 @@ const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
 
-const Menu = sequelize.define('menu', {
-  name: {
+const MenuSize = sequelize.define('menu_size', {
+  menu_id: {
     type: DataTypes.STRING,
+    primaryKey: true,
   },
-  is_active: {
+  size_id: {
+    type: DataTypes.TINYINT,
+    primaryKey: true,
+  },
+  price: {
     type: DataTypes.TINYINT,
   },
 },
@@ -15,4 +20,4 @@ const Menu = sequelize.define('menu', {
   underscored:true
 });
 
-module.exports = Menu;
+module.exports = MenuSize;
