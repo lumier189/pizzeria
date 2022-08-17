@@ -3,12 +3,11 @@ require('dotenv').config()
 var createError = require('http-errors');
 var express = require('express');
 var logger = require('morgan');
-const bodyParser = require("body-parser")
-var indexRouter = require('./routes/index');
+const bodyParser = require("body-parser");
 var menuRouter = require('./routes/menu.router');
-const registerRouter = require("./routes/register.router")
+const registerRouter = require("./routes/register.router");
 const orderRouter = require("./routes/order.router");
-const ingredientRouter = require("./routes/ingredients.router")
+const ingredientRouter = require("./routes/ingredients.router");
 var app = express();
 
 
@@ -17,7 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.use("/", indexRouter);
 app.use("/pizzas", menuRouter);
 app.use("/clients", registerRouter);
 app.use("/orders", orderRouter);
