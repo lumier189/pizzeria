@@ -1,9 +1,9 @@
 const Menu = require('../models/menu.model');
 
-async function listAllPizzas(req, res) {
+async function list(req, res) {
   const menu = await Menu.findAll();
 
-  return res.send({ menu });
+  return res.json(menu);
 }
 
-module.exports = listAllPizzas;
+module.exports = { list };

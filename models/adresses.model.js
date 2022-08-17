@@ -9,7 +9,7 @@ const Adresses = sequelize.define('adresses', {
 
   },
   number: {
-    type: DataTypes.TINYINT,
+    type: DataTypes.STRING,
   },
   postal_code: {
     type: DataTypes.STRING,
@@ -23,16 +23,10 @@ const Adresses = sequelize.define('adresses', {
   client_id: {
     type: DataTypes.INTEGER,
   },
-  createdAt: {
-    field: 'created_at',
-    type: Sequelize.DATE,
-  },
-  updatedAt: {
-    field: 'updated_at',
-    type: Sequelize.DATE,
-  },
-}, {
-  timestamps: false,
+ 
+},
+{
+  underscored:true
 });
 
 module.exports = Adresses;

@@ -21,18 +21,9 @@ const Orders = sequelize.define(
     adress_id: {
       type: DataTypes.INTEGER,
     },
-    createdAt: {
-      field: 'created_at',
-      type: Sequelize.DATE,
-    },
-    updatedAt: {
-      field: 'updated_at',
-      type: Sequelize.DATE,
-    },
-  }, 
-  {
-    timestamps: true,
   },
-);
+  {
+    underscored:true
+  });
   
 module.exports = Orders;

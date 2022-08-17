@@ -1,23 +1,33 @@
 const Client = require('../models/clients.model');
 const Adresses = require('../models/adresses.model');
-// const bodyParser = require("body-parser");
-// app.use(bodyParser.urlencoded({ extended: true }))
+const bcrypt = require('bcrypt');
+const saltRounds = Number(process.env.SALT_ROUNDS);
 
-async function listAllClients(req, res) {
-  // Client.hasMany(Adresses, {foreignKey: 'client_id'});
-  // Adresses.belongsTo(Client, {foreignKey: 'client_id'});
-
-  const arrayClient = await Client.findAll({ include: [Adresses] });
-  return res.send({ Client: arrayClient });
-}
 
 async function createNewClient(req, res) {
-  const adressData = req.body.adress;
+  const {
+      adress: adressData,
+      name,
+      phone,
+      email,
+      birth_date,
+      marital_status,
+      gender,
+      password 
+    } = req.body;
+    console.log(saltRounds,password)
   const defaultAdress = await Adresses.create(adressData);
-
-  const clientData = req.body;
-  clientData.adress_id = defaultAdresses.id;
-  const client = await Client.create(clientData);
+  const hashedPass = await bcrypt.hash(password, saltRounds);
+  const client = await Client.create({
+    name,
+    phone,
+    email,
+    birth_date,
+    marital_status,
+    gender,
+    password: hashedPass,
+    adress_id: defaultAdress.id
+  });
 
   defaultAdress.client_id = client.id;
   await defaultAdress.save();
@@ -25,4 +35,4 @@ async function createNewClient(req, res) {
   return res.status(201).json(client);
 }
 
-module.exports = { listAllClients, createNewClient };
+module.exports = { createNewClient };

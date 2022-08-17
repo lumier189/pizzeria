@@ -32,22 +32,12 @@ const Client = sequelize.define(
     password: {
       type: DataTypes.STRING,
     },
-    createdAt: {
-      field: 'created_at',
-      type: Sequelize.DATE,
-    },
-    updatedAt: {
-      field: 'updated_at',
-      type: Sequelize.DATE,
-    },
   },
   {
-    timestamps: true,
+    underscored:true
+  });
 
-  },
-);
-
-// Client.hasMany(Adresses, { foreignKey: 'client_id' });
-// Adresses.belongsTo(Client, { foreignKey: 'client_id' });
+Client.hasMany(Adresses, { foreignKey: 'client_id' });
+Adresses.belongsTo(Client, { foreignKey: 'client_id' });
 
 module.exports = Client;

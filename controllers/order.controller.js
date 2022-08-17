@@ -8,44 +8,45 @@ async function orders(req, res) {
   OrderItems.belongsTo(Orders, { foreignKey: 'order_id' });
   const arrayOrders = await Orders.findByPk(id, { include: [OrderItems] });
 
-  return res.send({ order: arrayOrders });
+  return res.json({ order: arrayOrders });
 }
 
 
 async function createOrder(req, res) {
   const orderData = req.body;
-  const itemsData = req.body.items
+  const { items: itemsData } = req.body
 
-  const promessas = itemsData.map(async (itemsData) => {
-    const findPrice = await MenuSize.findOne({
+  const promessas = itemsData.map(async (itemData) => {
+    const menuSize = await MenuSize.findOne({
       where: {
-        menu_id: itemsData.menu_id,
-        size_id: itemsData.size_id
+        menu_id: itemData.menu_id,
+        size_id: itemData.size_id
       }
     });
-
-    itemsData.price = findPrice.price * itemsData.quantity
-    const resultadoItems = await OrderItems.create(itemsData);
-    return resultadoItems
+   
+    return new OrderItems({
+      ...itemData,
+      price: menuSize.price * itemData.quantity
+      
+    })
   })
 
-  const resultado = await Promise.all(promessas)
-  var price = 0
-  for (var i = 0; i < resultado.length; i++) {
-    price += resultado[i].price;
-  };
-  
-  orderData.price = price
-  const resultadoOrders = await Orders.create(orderData);
+  const orderItems = await Promise.all(promessas)
+   
+  orderData.price = orderItems.reduce((total, orderItem) => {
+   
+      return total + orderItem.price;
+    }, 0);
 
-  for (var i = 0; i < resultado.length; i++) {
-    resultado[i].order_id = resultadoOrders.id;
-    await resultado[i].save();
-  }
-};
+  const order = await Orders.create(orderData);
+    
+  await Promise.all(orderItems.map((orderItem)=>OrderItems.create({
+    ...orderItem.dataValues,
+    order_id: order.id
+  }))); 
 
-
-
+  res.status(201).json(order);
+}
 
 
 module.exports = { orders, createOrder };

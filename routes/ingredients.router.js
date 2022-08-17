@@ -1,16 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const bodyParser = require("body-parser");
-const ingredientController = require("../controllers/ingredients.controller")
+const ingredientController = require("../controllers/ingredients.controller");
 
 
-
-
-
-router.get("/", ingredientController)
-
-
-
+router.get("/", ingredientController.list)
 
 
 module.exports = router;

@@ -1,9 +1,9 @@
-const Ingredients = require('../models/ingredients.model');
+const Ingredient = require('../models/ingredients.model');
 
-async function listAllIngredients(req, res) {
-  const ingredients = await Ingredients.findAll();
+async function list(req, res) {
+  const ingredients = await Ingredient.findAll();
 
-  return res.send({ ingredients });
+  return res.json({ ingredients });
 }
 
-module.exports = listAllIngredients;
+module.exports = { list };

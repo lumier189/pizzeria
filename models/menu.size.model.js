@@ -15,17 +15,9 @@ const MenuSize = sequelize.define('menu_size', {
   price: {
     type: DataTypes.TINYINT,
   },
-  createdAt: {
-    field: 'created_at',
-    type: Sequelize.DATE,
-  },
-  updatedAt: {
-    field: 'updated_at',
-    type: Sequelize.DATE,
-  },
 },
- {
-  timestamps: true,
+{
+  underscored:true
 });
 
 module.exports = MenuSize;
