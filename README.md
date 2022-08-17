@@ -4,10 +4,10 @@ E também apontar que seu desenvolvimento foi completamente documentado e você 
 
 
  <h2 align="center">levantamento de requisistos </h2>
-O primeiro passo depois de definir qual tipo de projeto seria, foi fazer o <a href="https://github.com/vituhugo/pizzeria/wiki/Requirements-gathering ">levantamento de requisitos</a>, aonde verificamos todas as necessidades e demandas do "cliente", sendo a primeira etapa para começar a estruturar os proximos passos.
+Depois de definar qual tipo de projeto seria o proximo passo foi fazer o <a href="https://github.com/vituhugo/pizzeria/wiki/Requirements-gathering ">levantamento de requisitos</a>, aonde verificamos todas as necessidades e demandas do "cliente", sendo a primeira etapa para começar a estruturar os proximos passos.
 
 
-Logo após vem a parte que me tomou mais tempo:  <a href="https://github.com/vituhugo/pizzeria/wiki/Database-definition">definições da database</a>, É aqui que fazemos todas as verificações pra atender as demandas, e quanto melhor for sua database mais facil será codar lá frente.
+Assim que as necessidades foram definidas, me deparei na segunda etapa, e confesso que foi a que me tomou mais tempo  <a href="https://github.com/vituhugo/pizzeria/wiki/Database-definition">definições da database</a>, É aqui que fazemos todas as verificações pra atender as demandas, e quanto melhor for sua database mais facil será codar lá frente.
 
 Essa etapa foi uma verdadeira escola para entender melhor os os conceitos do banco de dados, a famosa DER/MER ou seja : Entidades tipos de relacionamentos.Também nessa etapa foram utilizadas as Regras de normalização do banco de dados.
 
