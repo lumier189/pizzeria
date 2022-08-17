@@ -1,4 +1,6 @@
-Você pode acompanhar o desenvolvimento deste projeto diretamente na  <a href="https://github.com/vituhugo/pizzeria/wiki">wiki</a>
+Olá! Primeiramente gostaria de agredecer ao @Vituhugo por toda a instrução dada ao decorrer deste projeto. <br>
+<br>
+E também apontar que seu desenvolvimento foi completamente documentado e você pode acompanhar diretamente na  <a href="https://github.com/vituhugo/pizzeria/wiki">wiki</a>.
 
 
 O primeiro passo depois de definir qual tipo de projeto seria, foi fazer o <a href="https://github.com/vituhugo/pizzeria/wiki/Requirements-gathering ">levantamento de requisitos</a>, aonde verificamos todas as necessidades e demandas do "cliente", sendo a primeira etapa para começar a estruturar os proximos passos.
