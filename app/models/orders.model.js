@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const orders = require('../controllers/order.controller');
 const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
@@ -23,7 +22,8 @@ const Orders = sequelize.define(
     },
   },
   {
-    underscored:true
-  });
-  
+    underscored: true,
+  },
+);
+
 module.exports = Orders;
