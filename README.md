@@ -94,9 +94,17 @@ Então foi partir para fazer os endpoints:
 
 1 importar as Models > 2 construir o controller > 3 construir o router 
 
-1 ![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)
-2 ![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)
+ ![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)
+ ![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)
  ![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
+ 
+ 
+ middlewares de autenticação > error handler
+ 
+ 
+![image](https://user-images.githubusercontent.com/108551838/185513242-20d88ed7-f8c5-4adf-bb33-6671bd070a7c.png)
+![image](https://user-images.githubusercontent.com/108551838/185513263-5b342045-493f-4f7f-ba19-3254c14490ee.png)
+
 
 
 Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que foi visto no começo atravéz do mysql, agora por meio do sequelize.
