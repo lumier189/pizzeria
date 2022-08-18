@@ -34,8 +34,9 @@ const Client = sequelize.define(
     },
   },
   {
-    underscored:true
-  });
+    underscored: true,
+  },
+);
 
 Client.hasMany(Adresses, { foreignKey: 'client_id' });
 Adresses.belongsTo(Client, { foreignKey: 'client_id' });

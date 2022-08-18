@@ -22,7 +22,8 @@ const Items = sequelize.define(
     },
   },
   {
-    underscored:true
-  });
+    underscored: true,
+  },
+);
 
 module.exports = Items;
