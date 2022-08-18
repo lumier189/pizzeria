@@ -99,13 +99,24 @@ começar a importar as Models > fazer o controller > router
 ![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
 
 
-Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que tinhamos visto lá atrás atravéz do mysql, agora por meio do sequelize.
+Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que foi visto no começo atravéz do mysql, agora por meio do sequelize.
 
 Entender melhor os conceitos de sync e async, e como as funções se comportar durante esse processo.
 
-o cuidado ao verificar os dados que vem antes de manda-los ao banco de dados.
+O cuidado ao verificar os dados que são recebidos antes de manda-los ao banco de dados.
 
-Importancia de cryptografar as senhas, para que dados sensiveis não sejam acessiveis diretamente no banco de dados.
+O uso de cryptografia e tokens.
+
+Código de respostas http, middlewares.
+
+Conceitos de SOLID e código limpo.
+
+
+
+No final recorri ao ESLINT para dar aquele tapa no visual do código. e voilá 
+
+![image](https://user-images.githubusercontent.com/108551838/185512195-e0ff7d80-adc9-4585-b4b2-beabe61059b4.png)
+
 
 
 
