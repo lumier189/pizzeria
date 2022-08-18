@@ -30,8 +30,8 @@ Queria eu ter aprendido esse conceito antes de ter feito [meu primeiro crud com 
 Nessa parte foram aplicados os conceitos REST
 
 reponsabilidades REST
-* **Cliente:* é o componente solicitante de um serviço e envia solicitações para vários tipos de serviços ao servidor
-* **Servidor:* É o componente que é o provedor de serviços e fornece continuamente serviços ao cliente conforme as solicitações.
+* **Cliente:** é o componente solicitante de um serviço e envia solicitações para vários tipos de serviços ao servidor
+* **Servidor:** É o componente que é o provedor de serviços e fornece continuamente serviços ao cliente conforme as solicitações.
 
 A comunicação entre cliente e servidor ocorre através da troca de mensagens usando um padrão de solicitação-resposta. O cliente basicamente envia uma solicitação de serviço e o servidor retorna uma resposta.
 
@@ -62,14 +62,14 @@ Cada resposta que a aplicação REST retorna, é enviado um código definindo o 
 * 404 (NOT FOUND), rota ou coleção não encontrada;
 * 500 (INTERNAL SERVER ERROR), ocorreu algum erro no servidor.
 
-<https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
+fonte: <https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
 
 
 Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
 
 como por exemplos conferir o que pedir e o que esperar da resposta:
 
-<img width="500px" src="https://user-images.githubusercontent.com/108551838/185509300-ae1d2e22-226c-4382-8902-e02647a34b54.png" alt=""> <img width="500px" src="https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png" alt="">
+<img width="300px" height="300px" src="https://user-images.githubusercontent.com/108551838/185509300-ae1d2e22-226c-4382-8902-e02647a34b54.png" alt=""> <img width="500px" src="https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png" alt="">
 
 
 
