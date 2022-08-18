@@ -5,7 +5,7 @@ E também apontar que seu desenvolvimento foi completamente documentado e você 
 
  ## Definição do projeto e Levantamento de requisitos.
  
-  O primeiro passo foi fazer o levantamento de requisitos,aonde é necessario verificar as demandas do *"cliente"* sendo o start pra começar a estruturar os proximos passos.
+O primeiro passo foi fazer o levantamento de requisitos,aonde é necessario verificar as demandas do *"cliente"* sendo o start pra começar a estruturar os proximos passos.
 
 ## Definições da database
 
@@ -76,6 +76,36 @@ Confira o [resultado final](https://documenter.getpostman.com/view/2650664/VUjQm
 ## Codando!!
 
 
+Como tudo já estava definido, essa era a hora de fazer acontecer!
+
+* npm i nodemon
+* npx express-generator
+* npm i sequelize
+* npm i dotenv
+* npm i mysql2
+* npm i bcrypt
+* npm i jsonwebtoken
+
+dependencias nessecarias, hora de aplicar os conceitos MVC só que dessa vez sem V 😂
+
+
+Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.
+então foi partir para fazer os endpoints:
+
+começar a importar as Models > fazer o controller > router 
+
+![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)
+![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)
+![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
+
+
+Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que tinhamos visto lá atrás atravéz do mysql, agora por meio do sequelize.
+
+Entender melhor os conceitos de sync e async, e como as funções se comportar durante esse processo.
+
+o cuidado ao verificar os dados que vem antes de manda-los ao banco de dados.
+
+Importancia de cryptografar as senhas, para que dados sensiveis não sejam acessiveis diretamente no banco de dados.
 
 
 
