@@ -63,7 +63,9 @@ Cada resposta que a aplicação REST retorna, é enviado um código definindo o 
 * 500 (INTERNAL SERVER ERROR), ocorreu algum erro no servidor.
 
 
-Daqui pra frente a ferramenta [postman] se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,
-Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo
+Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,
+Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
+
+
 
 
