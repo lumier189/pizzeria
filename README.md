@@ -89,19 +89,17 @@ Como tudo já estava definido, essa era a hora de fazer acontecer!
 dependencias nessecarias, hora de aplicar os conceitos MVC só que dessa vez sem V 😂
 
 
-Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.
-então foi partir para fazer os endpoints:
+Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.<br>
+Então foi partir para fazer os endpoints:
 
-começar a importar as Models > fazer o controller > router 
+Começar a importar as Models > fazer o controller > router 
 
-![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)
-![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)
-![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
+![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
 
 
 Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que foi visto no começo atravéz do mysql, agora por meio do sequelize.
 
-Entender melhor os conceitos de sync e async, e como as funções se comportar durante esse processo.
+Entender melhor os conceitos de sync e async, e como algumas funções se comportam durante esse processo.
 
 O cuidado ao verificar os dados que são recebidos antes de manda-los ao banco de dados.
 
