@@ -71,6 +71,12 @@ como por exemplos conferir o que pedir e o que esperar da resposta:
 
 <img width="300px" height="300px" src="https://user-images.githubusercontent.com/108551838/185509300-ae1d2e22-226c-4382-8902-e02647a34b54.png" alt=""> <img width="500px" src="https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png" alt="">
 
+Confira o [resultado final](https://documenter.getpostman.com/view/2650664/VUjQm4Zw) dessa etapa.
+
+## Codando!!
+
+
+
 
 
 
