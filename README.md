@@ -3,45 +3,65 @@ Olá! Primeiramente gostaria de agredecer ao @Vituhugo por toda a instrução da
 E também apontar que seu desenvolvimento foi completamente documentado e você pode acompanhar diretamente na  <a href="https://github.com/vituhugo/pizzeria/wiki">wiki</a>.
 
 
- <h2>levantamento de requisistos </h2>
-Depois de definar qual tipo de projeto seria o proximo passo foi fazer o <a href="https://github.com/vituhugo/pizzeria/wiki/Requirements-gathering ">levantamento de requisitos</a>, aonde verificamos todas as necessidades e demandas do "cliente", sendo a primeira etapa para começar a estruturar os proximos passos.
-
-
-Assim que as necessidades foram definidas, me deparei na segunda etapa, e confesso que foi a que me tomou mais tempo  <a href="https://github.com/vituhugo/pizzeria/wiki/Database-definition">definições da database</a>, É aqui que fazemos todas as verificações pra atender as demandas, e quanto melhor for sua database mais facil será codar lá frente.
-
-Essa etapa foi uma verdadeira escola para entender melhor os os conceitos do banco de dados, a famosa DER/MER ou seja : Entidades tipos de relacionamentos.Também nessa etapa foram utilizadas as Regras de normalização do banco de dados.
-
-conceitos gerais das regras de normalização do banco de dados: 
-![image](https://user-images.githubusercontent.com/108551838/185192385-cdd64e64-24e1-41a3-9729-3bdd859c6917.png)
-
-
-Depois de muitas tentativas, muitas perguntas e artigos, como o dump inicial pronto eu estava pronto pra ir pra proxima etapa.
-
-![image](https://user-images.githubusercontent.com/108551838/185193246-f0dec7d0-fcf2-46ba-a4b6-6c8fb1af924a.png)
-
-
-A seguinte etapa foi algo que não fez parte da primeira aplicação que fiz uma semana atrás. Então com propriedade eu digo: FAZ TODA A DIFERENÇA,
-sem ela e sem as "Regras de normalização do banco de dados" tudo que vier pela frente vai tomar MUITO mais tempo.
-durante o <a href="">primeiro crud</a> fiquei boas horas perdido em rotas sem saber qual era qual, perdido em nomes de variaveis.
-Me assusta imaginar a bagunça que seria tentar seguir daqui pra frente sem estar estruturado e normalizado.Uma vez que a estruta estava pronta eu poderia me preocupar simplesmente em "codar", e não em codar definir e estruturar ao mesmo tempo;
-
-<a href="https://github.com/vituhugo/pizzeria/wiki/Routes-definitions">Rotas definidas</a>
-
-Ah, é importante mencionar que tudo foi aplicado com base no conceito REST aonde temos:
-
-![image](https://user-images.githubusercontent.com/108551838/185195696-9c999206-a5ee-434d-a8d1-d4f498429136.png)
-![image](https://user-images.githubusercontent.com/108551838/185195787-19412c03-3ef3-49e5-acbb-f1a445088630.png)
-
-metodos HTTP:
-![image](https://user-images.githubusercontent.com/108551838/185195964-1568d6b6-71d5-42a6-a5ff-318f85075e47.png)
-
-Codigo de respostas:
-![image](https://user-images.githubusercontent.com/108551838/185196034-4f18521e-1773-4a0a-a30d-480fd3deb72e.png)
-
-
+ ##Definição do projeto e Levantamento de requisitos.
  
-aqui você pode checar o <a href="https://documenter.getpostman.com/view/2650664/VUjQm4Zw">resultado final</a> da aplicação do REST. 
+ O primeiro passo foi fazer o levantamento de requisitos,aonde é necessario verificar as demandas do *"cliente"* sendo o start pra começar a estruturar os proximos passos.
+
+##Definições da database
+
+Aqui entramos na etapa que mais me tomou tempo,aonde começamos a construir um model e fazer verificações para tirar as *"demandas/necessidades"* do 
+mundo das ideias e encontrar uma maneira de fazer funcionar.
+
+Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco de dados, As entendidas e seus tiposde relacionamentos, além de fazer o meu primeiro diagrama ER
+
+Tudo foi feito seguindo as [**REGRAS DE NORMALIZAÇÃO DO BANCO DE DADOS**](https://github.com/vituhugo/pizzeria/wiki/Database-definition#the-concepts)
+
+então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dumpinicial;
 
 
+##Definição das rotas
+
+Queria eu ter aprendido esse conceito antes de ter feito [MEU PRIMEIRO CRUD](),aonde eu dei um nó na cabeça enquanto codava e definia ao mesmo tempo, e muitas
+vezes me perdia tendo que voltar pra descobrir em qual variavél estava armazenados os dados que eu precisava usar.
+
+
+##Definição dos pedidos e respostas
+
+É aqui que o banco de dados e o node se misturam!!
+
+Nessa parte foram aplicados os conceitos REST
+
+reponsabilidades REST
+* *Cliente:* é o componente solicitante de um serviço e envia solicitações para vários tipos de serviços ao servidor
+* *Servidor:* É o componente que é o provedor de serviços e fornece continuamente serviços ao cliente conforme as solicitações.
+
+A comunicação entre cliente e servidor ocorre através da troca de mensagens usando um padrão de solicitação-resposta. O cliente basicamente envia uma solicitação de serviço e o servidor retorna uma resposta.
+
+
+Requisições e comunicações
+
+O REST precisa que um cliente faça uma requisição para o servidor para enviar ou modificar dados. Um requisição consiste em:
+
+*Um verbo ou método HTTP, que define que tipo de operação o servidor vai realizar;
+*Um header, com o cabeçalho da requisição que passa informações sobre a requisição;
+*Um path (caminho ou rota) para o servidor;
+*Informação no corpo da requisição, sendo esta informação opcional;
+
+Métodos HTTP
+
+* O método GET é o método mais comum, geralmente é usado para solicitar que um servidor envie um recurso;
+* O método POST foi projetado para enviar dados de entrada para o servidor. Na prática, é frequentemente usado para suportar formulários HTML;
+* O método PUT edita e atualiza documentos em um servidor;
+* O método DELETE que como o próprio nome já diz, deleta certo dado ou coleção do servidor.
+
+Códigos de Respostas
+Cada resposta que a aplicação REST retorna, é enviado um código definindo o status da requisição. Por exemplo:
+
+* 200 (OK), requisição atendida com sucesso;
+* 201 (CREATED), objeto ou recurso criado com sucesso;
+* 204 (NO CONTENT), objeto ou recurso deletado com sucesso;
+* 400 (BAD REQUEST), ocorreu algum erro na requisição (podem existir inumeras causas);
+* 404 (NOT FOUND), rota ou coleção não encontrada;
+* 500 (INTERNAL SERVER ERROR), ocorreu algum erro no servidor.
 
 
