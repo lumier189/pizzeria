@@ -95,8 +95,10 @@ Então foi partir para fazer os endpoints:
 1 importar as Models > 2 construir o controller > 3 construir o router 
 
  ![image](https://user-images.githubusercontent.com/108551838/185510838-ece74510-4e3e-4f8d-8741-02ea289d9716.png)
- ![image](https://user-images.githubusercontent.com/108551838/185510870-c06da901-86d0-4b2f-99b6-e9f204f52e33.png)
- ![image](https://user-images.githubusercontent.com/108551838/185510886-d3331698-e83a-4d1e-8103-f7d563fb7487.png)
+ ![image](https://user-images.githubusercontent.com/108551838/185513422-eda7633c-9947-44bb-8eb1-5bab7ab40722.png)
+ ![image](https://user-images.githubusercontent.com/108551838/185513462-173f7cca-8f7f-4fc8-9535-65a38dafd539.png)
+
+
  
  
  middlewares de autenticação > error handler
