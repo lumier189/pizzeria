@@ -62,9 +62,14 @@ Cada resposta que a aplicação REST retorna, é enviado um código definindo o 
 * 404 (NOT FOUND), rota ou coleção não encontrada;
 * 500 (INTERNAL SERVER ERROR), ocorreu algum erro no servidor.
 
+<https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
 
-Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,
-Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
+
+Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
+
+como por exemplos conferir o que pedir e o que esperar da resposta:
+![image](https://user-images.githubusercontent.com/108551838/185508200-4082ea6f-d2ab-4298-ad43-dc90fa96d125.png)
+![image](https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png)
 
 
 
