@@ -86,7 +86,7 @@ Como tudo já estava definido, essa era a hora de fazer acontecer!
 * npm i bcrypt
 * npm i jsonwebtoken
 
-dependencias necessarias, hora de aplicar os conceitos MVC só que dessa vez sem V 😂
+dependencias necessarias, hora de aplicar os conceitos MVC 
 
 
 Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.<br>
