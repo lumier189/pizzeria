@@ -67,7 +67,7 @@ fonte: <https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
 
 Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
 
-como por exemplos conferir o que pedir e o que esperar da resposta:
+como por exemplo conferir o que pedir e o que esperar da resposta:
 
 <img width="300px" height="300px" src="https://user-images.githubusercontent.com/108551838/185509300-ae1d2e22-226c-4382-8902-e02647a34b54.png" alt=""> <img width="500px" src="https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png" alt="">
 
@@ -86,7 +86,7 @@ Como tudo já estava definido, essa era a hora de fazer acontecer!
 * npm i bcrypt
 * npm i jsonwebtoken
 
-dependencias nessecarias, hora de aplicar os conceitos MVC só que dessa vez sem V 😂
+dependencias necessarias, hora de aplicar os conceitos MVC só que dessa vez sem V 😂
 
 
 Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.<br>
