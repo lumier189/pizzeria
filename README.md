@@ -15,7 +15,10 @@ Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco
 
 Tudo foi feito seguindo um padrão para [**regras de normalização do banco de dados**](https://github.com/vituhugo/pizzeria/wiki/Database-definition#the-concepts)
 
-então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dump inicial;
+Então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dump inicial;
+
+![image](https://user-images.githubusercontent.com/108551838/185516734-c978c98e-f8b8-41e5-a487-d9f18d5a850b.png)
+
 
 
 ## Definição das rotas
@@ -25,7 +28,7 @@ Queria eu ter aprendido esse conceito antes de ter feito [meu primeiro crud com 
 
 ## Definição dos pedidos e respostas
 
-É aqui que o banco de dados e o node se misturam!!
+É aqui que o banco de dados e o nodeJs se misturam!!
 
 Nessa parte foram aplicados os conceitos REST
 
@@ -65,13 +68,13 @@ Cada resposta que a aplicação REST retorna, é enviado um código definindo o 
 fonte: <https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
 
 
-Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento,Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
+Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento.Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
 
 como por exemplo conferir o que pedir e o que esperar da resposta:
 
 <img width="300px" height="300px" src="https://user-images.githubusercontent.com/108551838/185509300-ae1d2e22-226c-4382-8902-e02647a34b54.png" alt=""> <img width="500px" src="https://user-images.githubusercontent.com/108551838/185508264-bb25d177-e82e-45a1-afbd-ea3cc8b9c635.png" alt="">
 
-Confira o [resultado final](https://documenter.getpostman.com/view/2650664/VUjQm4Zw) dessa etapa.  ou a [versão simplificada](https://github.com/lumier189/pizzeria/wiki/Routes-definitions)
+Confira o [resultado final](https://documenter.getpostman.com/view/2650664/VUjQm4Zw) dessa etapa ou sua [versão simplificada](https://github.com/lumier189/pizzeria/wiki/Routes-definitions)
 
 ## Codando!!
 
@@ -86,11 +89,11 @@ Como tudo já estava definido, essa era a hora de fazer acontecer!
 * npm i bcrypt
 * npm i jsonwebtoken
 
-dependencias necessarias, hora de aplicar os conceitos MVC 
+Dependencias necessarias instaladas, hora de aplicar os conceitos MVC 
 
 
-Configurar o doenv > fazer a conexão com o banco de dados através do sequelize.<br>
-Então foi partir para fazer os endpoints:
+Configurar o dotenv > fazer a conexão com o banco de dados através do sequelize.<br>
+E então partir para fazer os endpoints:
 
 1 importar as Models > 2 construir o controller > 3 construir o router 
 
