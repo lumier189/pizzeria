@@ -13,7 +13,7 @@ Aqui entramos na etapa que mais me tomou tempo,aonde começamos a construir um m
 
 Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco de dados, As entendidas e seus tiposde relacionamentos, além de fazer o meu primeiro diagrama ER
 
-Tudo foi feito seguindo um padrão [**regras de normalização do banco de dados**](https://github.com/vituhugo/pizzeria/wiki/Database-definition#the-concepts)
+Tudo foi feito seguindo um padrão para [**regras de normalização do banco de dados**](https://github.com/vituhugo/pizzeria/wiki/Database-definition#the-concepts)
 
 então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dump inicial;
 
