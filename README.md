@@ -17,7 +17,7 @@ Tudo foi feito seguindo um padrão para [**regras de normalização do banco de 
 
 Então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dump inicial;
 
-![image](https://user-images.githubusercontent.com/108551838/185516734-c978c98e-f8b8-41e5-a487-d9f18d5a850b.png)
+![image](https://user-images.githubusercontent.com/108551838/185517402-b06c5359-243b-453b-9a46-ce69cfeb8420.png)
 
 
 
