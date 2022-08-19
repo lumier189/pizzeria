@@ -78,7 +78,7 @@ Confira o [resultado final](https://documenter.getpostman.com/view/2650664/VUjQm
 
 Como tudo já estava definido, essa era a hora de fazer acontecer!
 
-* npm i nodemon
+
 * npx express-generator
 * npm i sequelize
 * npm i dotenv
