@@ -123,7 +123,7 @@ Conceitos de SOLID e código limpo.
 
 
 
-No final recorri ao ESLINT para dar aquele tapa no visual do código. e voilá 
+No final recorri ao ESLINT para dar aquele tapa no visual do código e voilá 
 
 ![image](https://user-images.githubusercontent.com/108551838/185512195-e0ff7d80-adc9-4585-b4b2-beabe61059b4.png)![image](https://user-images.githubusercontent.com/108551838/185513609-7b5a1d80-12e8-4cff-8ca8-5502555ba93f.png)
 
