@@ -1,4 +1,4 @@
-Olá! Primeiramente gostaria de agredecer ao @Vituhugo por toda a instrução dada ao decorrer deste projeto. <br>
+Olá! Primeiramente gostaria de agredecer ao [@Vituhugo](https://github.com/vituhugo) por toda a instrução dada ao decorrer deste projeto. <br>
 <br>
 E também apontar que seu desenvolvimento foi completamente documentado e você pode acompanhar diretamente na  <a href="https://github.com/vituhugo/pizzeria/wiki">wiki</a>.
 
