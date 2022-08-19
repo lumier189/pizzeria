@@ -109,7 +109,7 @@ Então foi partir para fazer os endpoints:
 
 
 
-Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que foi visto no começo atravéz do mysql, agora por meio do sequelize. 1:1, 1:n e n:n.
+Vale ressaltar alguns aprendizados ao longo desse processo, como fazer o relacionamento das tabelas que foi visto no começo através do mysql, agora por meio do sequelize. 1:1, 1:n e n:n.
 
 Entender melhor os conceitos de sync e async, e como algumas funções se comportam durante esse processo.
 
