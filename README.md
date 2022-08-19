@@ -5,11 +5,11 @@ E também apontar que seu desenvolvimento foi completamente documentado e você 
 
  ## Definição do projeto e Levantamento de requisitos.
  
-O primeiro passo foi fazer o levantamento de requisitos,aonde é necessario verificar as demandas do *"cliente"* sendo o start pra começar a estruturar os proximos passos.
+O primeiro passo foi fazer o levantamento de requisitos, Nesse ponto é necessária a verificação de todas as demandas do  *"cliente"* sendo o start pra começar a estruturar os proximos passos.
 
 ## Definições da database
 
-Aqui entramos na etapa que mais me tomou tempo,aonde começamos a construir um model e fazer verificações para tirar as *"demandas/necessidades"* do mundo das ideias e encontrar uma maneira de fazer funcionar.
+Aqui entramos na etapa que mais me tomou tempo,construir uma model e fazer verificações para tirar as *"demandas/necessidades"* do mundo das ideias e encontrar uma maneira de fazer funcionar.
 
 Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco de dados, As entendidas e seus tiposde relacionamentos, além de fazer o meu primeiro diagrama ER
 
