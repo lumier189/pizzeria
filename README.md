@@ -11,19 +11,19 @@ O primeiro passo foi fazer o levantamento de requisitos, Nesse ponto é necessá
 
 Aqui entramos na etapa que mais me tomou tempo,construir uma model e fazer verificações para tirar as *"demandas/necessidades"* do mundo das ideias e encontrar uma maneira de fazer funcionar.
 
-Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco de dados, As entendidas e seus tiposde relacionamentos, além de fazer o meu primeiro diagrama ER
+Essa etapa foi uma verdadeira escola para entender melhor os conceitos dos banco de dados, As entidades e seus tipos de relacionamentos, além de fazer o meu primeiro diagrama ER
 
 Tudo foi feito seguindo um padrão para [**regras de normalização do banco de dados**](https://github.com/vituhugo/pizzeria/wiki/Database-definition#the-concepts)
 
 Então depois de muitos artigos, videos, finalmente consegui cumprir com todas as demandas necessarias, partindo assim para o dump inicial;
+![image](https://user-images.githubusercontent.com/108551838/188336939-a5ac271e-2110-49d3-ab7d-c3847ed60531.png)
 
-![image](https://user-images.githubusercontent.com/108551838/185517402-b06c5359-243b-453b-9a46-ce69cfeb8420.png)
 
 
 
 ## Definição das rotas
 
-Queria eu ter aprendido esse conceito antes de ter feito [meu primeiro crud com express](). Aonde eu dei um nó na cabeça enquanto codava e definia ao mesmo tempo, e muitas vezes me perdia tendo que voltar pra descobrir em qual variavél estava armazenados os dados que eu precisava usar.
+Queria eu ter aprendido esse conceito antes de ter feito [meu primeiro crud com express](). Aonde eu dei um nó na cabeça enquanto codava e definia ao mesmo tempo, e muitas vezes me perdia tendo que voltar pra descobrir em qual variável estava armazenados os dados que eu precisava usar.
 
 
 ## Definição dos pedidos e respostas
@@ -68,7 +68,7 @@ Cada resposta que a aplicação REST retorna, é enviado um código definindo o 
 fonte: <https://www.alura.com.br/artigos/rest-conceito-e-fundamentos>
 
 
-Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento.Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
+Daqui pra frente a ferramenta [postman](https://www.postman.com/) se torna nossa melhor aliada, tanto pra ajudar a estruturar quando testar efetivamente durante o desenvolvimento. Uma vez com a estrutura dos pedidos-respostas alinhados com o banco de dados, era só voltar aqui pra conferir exatamente o que eu precisava codar, e me concentrar totalmente em buscar um modo de faze-lo.
 
 como por exemplo conferir o que pedir e o que esperar da resposta:
 
