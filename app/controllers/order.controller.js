@@ -52,7 +52,7 @@ async function create(req, res) {
     order_id: order.id,
   })));
 
-  res.status(201).json(order);
+  res.status(201).json(orderData);
 }
 
 module.exports = { get, create, list };

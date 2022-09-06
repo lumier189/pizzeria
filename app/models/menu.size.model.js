@@ -1,9 +1,10 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./db');
+const menu = require('./menu.model');
 
 const { DataTypes } = Sequelize;
 
-const MenuSize = sequelize.define(
+const menuSize = sequelize.define(
   'menu_size',
   {
     menu_id: {
@@ -23,4 +24,7 @@ const MenuSize = sequelize.define(
   },
 );
 
-module.exports = MenuSize;
+menu.hasMany(menuSize, { foreignKey: 'menu_id' });
+menuSize.belongsTo(menu, { foreignKey: 'menu_id' });
+
+module.exports = menuSize;

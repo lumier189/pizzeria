@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./db');
-const Adresses = require('./adresses.model');
+const Addresses = require('./addresses.model');
 
 const { DataTypes } = Sequelize;
 
@@ -23,7 +23,7 @@ const Client = sequelize.define(
     marital_status: {
       type: DataTypes.STRING,
     },
-    adress_id: {
+    address_id: {
       type: DataTypes.INTEGER,
     },
     gender: {
@@ -38,7 +38,7 @@ const Client = sequelize.define(
   },
 );
 
-Client.hasMany(Adresses, { foreignKey: 'client_id' });
-Adresses.belongsTo(Client, { foreignKey: 'client_id' });
+Client.hasMany(Addresses, { foreignKey: 'client_id' });
+Addresses.belongsTo(Client, { foreignKey: 'client_id' });
 
 module.exports = Client;

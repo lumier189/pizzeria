@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
-const Items = sequelize.define(
+const orderItems = sequelize.define(
   'orders_items',
   {
     order_id: {
@@ -26,4 +26,4 @@ const Items = sequelize.define(
   },
 );
 
-module.exports = Items;
+module.exports = orderItems;

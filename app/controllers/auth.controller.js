@@ -13,7 +13,15 @@ async function login(req, res) {
   }
   const { id } = client;
   const token = jwt.sign({ id }, SECRET, { expiresIn: 60 * 3 });
-  return res.json({ token, expiresIn: +new Date() + 1000 * 60 * 3 });
+  return res.json({ token, expiresIn: +new Date() + 1000 * 60 * 10 });
 }
 
-module.exports = { login };
+async function profile(req, res) {
+  const { userId } = req;
+  console.log(userId);
+  const user = await Client.findByPk(userId);
+
+  return res.json(user);
+}
+
+module.exports = { login, profile };

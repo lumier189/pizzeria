@@ -3,12 +3,11 @@ const sequelize = require('./db');
 
 const { DataTypes } = Sequelize;
 
-const Adresses = sequelize.define(
-  'adresses',
+const Addresses = sequelize.define(
+  'addresses',
   {
-    street_adress: {
+    street_address: {
       type: DataTypes.STRING,
-
     },
     number: {
       type: DataTypes.STRING,
@@ -32,4 +31,4 @@ const Adresses = sequelize.define(
   },
 );
 
-module.exports = Adresses;
+module.exports = Addresses;

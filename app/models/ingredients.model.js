@@ -4,7 +4,7 @@ const sequelize = require('./db');
 const { DataTypes } = Sequelize;
 
 const Ingredients = sequelize.define(
-  'ingredient',
+  'ingredients',
   {
     name: {
       type: DataTypes.STRING,

@@ -1,13 +1,13 @@
 /* eslint-disable camelcase */
 const bcrypt = require('bcrypt');
 const Client = require('../models/clients.model');
-const Adresses = require('../models/adresses.model');
+const Addresses = require('../models/addresses.model');
 
 const saltRounds = Number(process.env.SALT_ROUNDS);
 
 async function create(req, res) {
   const {
-    adress: adressData,
+    address: addressData,
     name,
     phone,
     email,
@@ -16,7 +16,7 @@ async function create(req, res) {
     gender,
     password,
   } = req.body;
-  const defaultAdress = await Adresses.create(adressData);
+  const defaultAddress = await Addresses.create(addressData);
   const hashedPass = await bcrypt.hash(password, saltRounds);
   const client = await Client.create({
     name,
@@ -26,11 +26,11 @@ async function create(req, res) {
     marital_status,
     gender,
     password: hashedPass,
-    adress_id: defaultAdress.id,
+    address_id: defaultAddress.id,
   });
 
-  defaultAdress.client_id = client.id;
-  await defaultAdress.save();
+  defaultAddress.client_id = client.id;
+  await defaultAddress.save();
 
   return res.status(201).json(client);
 }

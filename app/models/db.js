@@ -7,6 +7,12 @@ const {
 const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
   host: DB_HOST,
   dialect: 'mysql',
+  define: {
+    underscore: true,
+    underscoreAll: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+  },
 });
 
 sequelize.authenticate()
