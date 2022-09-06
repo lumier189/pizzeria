@@ -17,7 +17,7 @@ const Orders = sequelize.define(
     price: {
       type: DataTypes.STRING,
     },
-    adress_id: {
+    address_id: {
       type: DataTypes.INTEGER,
     },
   },
